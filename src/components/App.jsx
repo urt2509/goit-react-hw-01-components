@@ -1,8 +1,10 @@
 import user from '../data/user.json';
+import data from '../data/data.json';
 
 import { Section } from 'components/Sections/Sections';
 import { Container } from 'components/Container/Container';
 import { Profile } from 'components/Profile/Profile';
+import { Statistics } from 'components/Statistics/Statistics';
 
 export const App = () => {
   return (
@@ -20,7 +22,9 @@ export const App = () => {
       </Section>
 
       <Section title="Task 2">
-        <Container></Container>
+        <Container>
+          <Statistics title="Upload stats" stats={data} />
+        </Container>
       </Section>
 
       <Section title="Task 3">
