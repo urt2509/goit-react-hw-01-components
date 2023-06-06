@@ -30,4 +30,14 @@ const Statistics = ({ title = ' ', stats }) => {
   );
 };
 
+Statistics.propTypes = {
+  id: PropTypes.string.isRequired,
+
+  title: PropTypes.string,
+  stats: PropTypes.shape({
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.string.isRequired,
+  }),
+};
+
 export { Statistics };
