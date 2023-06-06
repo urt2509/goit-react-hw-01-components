@@ -1,7 +1,4 @@
-import user from './data/user.json';
-import data from './data/data.json';
-import transactions from './data/transactions.json';
-import friends from './data/friends.json';
+import user from '../data/user.json';
 
 import { Section } from 'components/Sections/Sections';
 import { Container } from 'components/Container/Container';
