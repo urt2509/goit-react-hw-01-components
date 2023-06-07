@@ -1,6 +1,6 @@
 .profile {
     background-color: #d8e3ed;
-    color: #f9fafa7f;
+    color: #ff6347;
     border-radius: 5px;
 
     margin-right: 50px;
@@ -18,4 +18,5 @@
 
     background-color: #f3f7fa;
 
+    &:not(:last-child)
 }

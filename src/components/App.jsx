@@ -1,10 +1,12 @@
 import user from '../data/user.json';
 import data from '../data/data.json';
+import friends from '../data/friends.json';
 
 import { Section } from 'components/Sections/Sections';
 import { Container } from 'components/Container/Container';
 import { Profile } from 'components/Profile/Profile';
 import { Statistics } from 'components/Statistics/Statistics';
+import { FriendList } from 'components/FriendList/FriendList';
 
 export const App = () => {
   return (
@@ -28,7 +30,9 @@ export const App = () => {
       </Section>
 
       <Section title="Task 3">
-        <Container></Container>
+        <Container>
+          <FriendList friends={friends} />
+        </Container>
       </Section>
 
       <Section title="Task 4">
