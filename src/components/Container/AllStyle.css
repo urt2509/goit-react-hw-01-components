@@ -1,6 +1,6 @@
 .profile {
-    background-color: #d8e3ed;
-    color: #ff6347;
+    background-color: #03cce6;
+    color: #f2f8f8;
     border-radius: 5px;
 
     margin-right: 50px;
@@ -18,5 +18,5 @@
 
     background-color: #f3f7fa;
 
-    &:not(:last-child)
+    text-transform: uppercase;
 }

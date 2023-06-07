@@ -14,7 +14,7 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 
-const Markup = ({ id, label, percentage }) => (
+const StatElement = ({ id, label, percentage }) => (
   <Item key={id} label={label} style={{ backgroundColor: getRandomHexColor() }}>
     <StatLabel>{label}</StatLabel>
     <StatPercentage>{percentage}</StatPercentage>
@@ -25,9 +25,15 @@ const Statistics = ({ title = ' ', stats }) => {
   return (
     <StatContainer>
       {title && <Title>{title}</Title>}
-      <StatList>{stats.map(Markup)}</StatList>
+      <StatList>{stats.map(StatElement)}</StatList>
     </StatContainer>
   );
+};
+
+StatElement.propTypes = {
+  id: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  percentage: PropTypes.string.isRequired,
 };
 
 Statistics.propTypes = {
